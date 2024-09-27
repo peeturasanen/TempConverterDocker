@@ -39,4 +39,11 @@ public class TemperatureConverter {
     public double kelvinToFahrenheit(double kelvin) {
         return Math.round((kelvin - 273.15) * 9 / 5 + 32);
     }
+
+    public static void main(String[] args) {
+        TemperatureConverter converter = new TemperatureConverter();
+        double kelvin = 300.1;
+        double fahrenheit = converter.kelvinToFahrenheit(kelvin);
+        System.out.println(kelvin + " Kelvin is equal to " + fahrenheit + " Fahrenheit.");
+    }
 }

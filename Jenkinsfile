@@ -13,7 +13,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 // Checkout code from Git repository
-                git 'https://github.com/peeturasanen/TempConverterDocker.git'
+                git branch: 'main', url: 'https://github.com/peeturasanen/TempConverterDocker.git'
             }
         }  
         stage('Build Docker Image') {
